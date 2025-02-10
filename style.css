@@ -7,6 +7,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .container {
     width: 90%;
     max-width: 500px;
@@ -15,6 +16,7 @@ body {
     border-radius: 20px;
     box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
 }
+
 #chatbox {
     height: 400px;
     background: #dde1e7;
@@ -22,11 +24,14 @@ body {
     border-radius: 10px;
     overflow-y: auto;
     box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #ffffff;
+    text-align: left;
 }
+
 #inputBox {
     display: flex;
     margin-top: 10px;
 }
+
 input {
     flex: 1;
     padding: 10px;
@@ -35,6 +40,7 @@ input {
     box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #ffffff;
     outline: none;
 }
+
 button {
     padding: 10px;
     margin-left: 5px;
@@ -43,24 +49,4 @@ button {
     background: #dde1e7;
     box-shadow: 5px 5px 10px #babecc, -5px -5px 10px #ffffff;
     cursor: pointer;
-}
-button:active {
-    box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #ffffff;
-}
-.message {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    width: fit-content;
-    max-width: 80%;
-}
-.user {
-    background-color: #007bff;
-    color: white;
-    align-self: flex-end;
-    text-align: right;
-}
-.bot {
-    background-color: #ddd;
-    text-align: left;
 }
