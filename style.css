@@ -1,48 +1,63 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background: #dde1e7;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#chatbox {
+.container {
     width: 90%;
     max-width: 500px;
+    background: #dde1e7;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+}
+#chatbox {
     height: 400px;
-    background: white;
-    margin: 20px auto;
+    background: #dde1e7;
     padding: 10px;
     border-radius: 10px;
     overflow-y: auto;
-    box-shadow: 0px 0px 10px #aaa;
+    box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #ffffff;
 }
 #inputBox {
-    width: 90%;
-    max-width: 500px;
-    padding: 10px;
-    margin: 10px auto;
     display: flex;
+    margin-top: 10px;
 }
 input {
     flex: 1;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #ffffff;
+    outline: none;
 }
 button {
     padding: 10px;
-    background-color: #28a745;
-    color: white;
+    margin-left: 5px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    background: #dde1e7;
+    box-shadow: 5px 5px 10px #babecc, -5px -5px 10px #ffffff;
     cursor: pointer;
+}
+button:active {
+    box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #ffffff;
 }
 .message {
     margin: 10px;
-    padding: 8px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 80%;
 }
 .user {
     background-color: #007bff;
     color: white;
+    align-self: flex-end;
     text-align: right;
 }
 .bot {
